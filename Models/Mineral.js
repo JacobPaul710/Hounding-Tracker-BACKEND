@@ -3,7 +3,7 @@ const mongoose = require('../config/connection');
 const MineralSchema = new mongoose.Schema(
     {
     date: {
-         type: Number,
+         type: Date,
          required: true
     },
     conditions: {
