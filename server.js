@@ -5,7 +5,7 @@ const app = express();
 const cors = require('cors');
 const morgan = require('morgan');
 const mongoose = require('./config/connection');
-const mineralsController = require('./Controllers/minerals');
+const mineralsController = require('./controllers/minerals');
 
 
 app.use(cors());
