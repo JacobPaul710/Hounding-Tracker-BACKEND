@@ -5,14 +5,14 @@ const app = express();
 const cors = require('cors');
 const morgan = require('morgan');
 const mongoose = require('./config/connection');
-const mineralController = require('./Controllers/mineral');
+const mineralsController = require('./Controllers/minerals');
 
 
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 
-app.use('/mineral', mineralController);
+app.use('/minerals', mineralsController);
 
 
 app.listen(PORT, () => {
