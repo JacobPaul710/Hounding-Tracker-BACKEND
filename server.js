@@ -5,17 +5,15 @@ const app = express();
 const cors = require('cors');
 const morgan = require('morgan');
 const mongoose = require('./config/connection');
-const mineralRouter = require('./Controllers/mineral');
+const mineralController = require('./controllers/mineral');
 
 
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
-app.use('/mineral', mineralRouter);
 
-app.get('/', (req, res) => {
-    res.send('Hello world');
-})
+app.use('/mineral', mineralController);
+
 
 app.listen(PORT, () => {
     console.log(`You are connected to PORT ${PORT} 🔥💰`)

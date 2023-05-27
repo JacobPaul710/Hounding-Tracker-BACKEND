@@ -2,12 +2,20 @@ const express = require('express');
 const Mineral = require('../Models/Mineral');
 const router = express.Router();
 
-router.get('/', async(req, res) =>{
-    res.json({message: "GET"})
+router.get('/', async(req, res) => {
+    try{
+        res.json(await Mineral.find({}))
+    } catch(error){
+        console.log("GET Request Error:", error)
+    }
 })
 
-router.post('/', async(req, res) =>{
-    res.json({message: "POST"})
+router.post('/', async(req, res) => {
+    try{
+        res.json(await Mineral.create(req.body))
+    } catch(error){
+        console.log("POST Request Error:", error)
+    }
 })
 
 // router.put('/', async(req, res) =>{
