@@ -26,12 +26,25 @@ router.get('/:id', async(req, res) => {
     }
 })
 
-router.put('/', async(req, res) =>{
-    res.json({message: "PUT"})
+router.put('/:id', async(req, res) =>{
+    try{
+        // const id = req.params.id;
+        res.json(await Mineral.findByIdAndUpdate(req.params.id, req.body, {new: true}))
+    } catch(error){
+        console.log("GET Request Error:", error)
+    // } finally {
+    //     res.redirect(`/${id}`);
+    }
 })
 
-router.delete('/', async(req, res) =>{
-    res.json({message: "DELETE"})
+router.delete('/:id', async(req, res) =>{
+    try{
+        res.json(await Mineral.findByIdAndDelete(req.params.id))
+    } catch(error){
+        console.log("GET Request Error:", error)
+    } // finally {
+    //     res.redirect('/');
+    // }
 })
 
 module.exports = router;
