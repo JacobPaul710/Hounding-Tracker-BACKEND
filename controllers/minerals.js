@@ -26,12 +26,12 @@ router.get('/:id', async(req, res) => {
     }
 })
 
-// router.put('/', async(req, res) =>{
-//     res.json({message: "PUT"})
-// })
+router.put('/', async(req, res) =>{
+    res.json({message: "PUT"})
+})
 
-// router.delete('/', async(req, res) =>{
-//     res.json({message: "DELETE"})
-// })
+router.delete('/', async(req, res) =>{
+    res.json({message: "DELETE"})
+})
 
 module.exports = router;
