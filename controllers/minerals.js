@@ -18,6 +18,14 @@ router.post('/', async(req, res) => {
     }
 })
 
+router.get('/:id', async(req, res) => {
+    try{
+        res.json(await Mineral.findById(req.params.id))
+    } catch(error){
+        console.log("GET Request Error:", error)
+    }
+})
+
 // router.put('/', async(req, res) =>{
 //     res.json({message: "PUT"})
 // })

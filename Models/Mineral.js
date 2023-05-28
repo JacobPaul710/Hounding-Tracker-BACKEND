@@ -25,8 +25,7 @@ const MineralSchema = new mongoose.Schema(
    },
     houndingName: {
             type: String,
-            required: [true, 'Name of hounder (can be username or real).'],
-            unique: true
+            required: [true, 'Name of hounder (can be username or real).']
        }, 
     },
 {timestamps: true}
