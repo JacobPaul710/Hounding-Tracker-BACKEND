@@ -17,7 +17,7 @@ const mineralSeed = [
         "conditions": "Cloudy",
         "county": "Linn",
         "image": "https://i.imgur.com/dPZSUf9.jpeg",
-        "houndingName": "JacobPaul7101"
+        "houndingName": "JacobPaul710"
     },
     {
         "mineralType": "Limb Cast",
@@ -25,7 +25,7 @@ const mineralSeed = [
         "conditions": "Cloudy",
         "county": "Deschutes County",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtxoxjpLfXdXlcBV02PiDNv3-FSBKhbqSlxQ&usqp=CAU",
-        "houndingName": "JacobPaul7102"
+        "houndingName": "JacobPaul710"
     }
 ]
 
@@ -57,7 +57,8 @@ router.post('/', async(req, res) => {
 
 router.get('/:id', async(req, res) => {
     try{
-        res.json(await Mineral.findById(req.params.id))
+        const mineral = await Mineral.findById(req.params.id)
+        res.json(mineral)
     } catch(error){
         console.log("GET Request Error:", error)
     }
@@ -65,12 +66,9 @@ router.get('/:id', async(req, res) => {
 
 router.put('/:id', async(req, res) =>{
     try{
-        // const id = req.params.id;
         res.json(await Mineral.findByIdAndUpdate(req.params.id, req.body, {new: true}))
     } catch(error){
         console.log("GET Request Error:", error)
-    // } finally {
-    //     res.redirect(`/${id}`);
     }
 })
 
@@ -79,9 +77,7 @@ router.delete('/:id', async(req, res) =>{
         res.json(await Mineral.findByIdAndDelete(req.params.id))
     } catch(error){
         console.log("GET Request Error:", error)
-    } // finally {
-    //     res.redirect('/');
-    // }
+    } 
 })
 
 module.exports = router;
