@@ -8,7 +8,7 @@ const mineralSeed = [
         "date": "09-03-22",
         "conditions": "Sunny",
         "county": "Linn",
-        "image": "https://i.etsystatic.com/8087270/r/il/700113/3680111486/il_fullxfull.3680111486_q8ea.jpg",
+        "image": "https://i.imgur.com/mQLxpEb.png",
         "houndingName": "JacobPaul710"
     },
     {
