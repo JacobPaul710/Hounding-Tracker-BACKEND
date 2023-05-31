@@ -18,18 +18,6 @@ const MineralSchema = new mongoose.Schema(
         type: String,
         required: [true, 'County mineral was found in required']
    },
-        markers: [
-            {
-                geocode: {
-                    type: Number
-                }
-            },
-            {
-                popUp: {
-                    type: String
-                }
-            }
-        ],
     image: 
     {
         type: String,
@@ -39,7 +27,13 @@ const MineralSchema = new mongoose.Schema(
             type: String,
             required: [true, 'Name of hounder (can be username or real).'],
        }, 
+    geocode: {
+        type: String
+        },
+    popUp: {
+        type: String
     },
+},
 {timestamps: true}
 )
 

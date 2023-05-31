@@ -8,9 +8,8 @@ const mineralSeed = [
         "date": "09-03-22",
         "conditions": "Sunny",
         "county": "Linn",
-        "markers": [
-            { "geocode": "44.3914279554609, -122.98910923622539"}, 
-            {"popUp": "Carnelian found by JacobPaul710"}],
+        "geocode": "44.3914279554609, -122.98910923622539",
+        "popUp": "Carnelian found by JacobPaul710",
         "image": "https://i.imgur.com/mQLxpEb.png",
         "houndingName": "JacobPaul710"
     },
@@ -19,9 +18,8 @@ const mineralSeed = [
         "date": "04-20-00",
         "conditions": "Cloudy",
         "county": "Linn",
-        "markers": [
-            { "geocode": "45.00643700696789, -124.00787560642435"}, 
-            {"popUp": "Holley Blue found by JacobPaul710"}],
+        "geocode": "45.00643700696789, -124.00787560642435", 
+        "popUp": "Holley Blue found by JacobPaul710",
         "image": "https://i.imgur.com/UfPi4R7.jpg",
         "houndingName": "JacobPaul710"
     },
@@ -30,9 +28,8 @@ const mineralSeed = [
         "date": "07-10-00",
         "conditions": "Cloudy",
         "county": "Deschutes County",
-        "markers": [
-            { "geocode": "44.37689134175511, -120.1178183453726"}, 
-            {"popUp": "Limb Cast found by JacobPaul710"}],
+        "geocode": "44.37689134175511, -120.1178183453726", 
+        "popUp": "Limb Cast found by JacobPaul710",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtxoxjpLfXdXlcBV02PiDNv3-FSBKhbqSlxQ&usqp=CAU",
         "houndingName": "JacobPaul710"
     }
