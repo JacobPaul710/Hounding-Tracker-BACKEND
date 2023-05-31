@@ -28,7 +28,7 @@ const MineralSchema = new mongoose.Schema(
             required: [true, 'Name of hounder (can be username or real).'],
        }, 
     geocode: {
-        type: [String]
+        type: [Number]
         },
     popUp: {
         type: String
