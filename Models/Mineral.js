@@ -29,9 +29,6 @@ const MineralSchema = new mongoose.Schema(
        }, 
     geocode: {
         type: [Number]
-        },
-    popUp: {
-        type: String
     },
 },
 {timestamps: true}
