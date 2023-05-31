@@ -8,7 +8,7 @@ const mineralSeed = [
         "date": "09-03-22",
         "conditions": "Sunny",
         "county": "Linn",
-        "image": "https://minerals.net/GemStoneInTheRoughImages/carnelian-rough-oregon.jpg",
+        "image": "https://i.etsystatic.com/8087270/r/il/700113/3680111486/il_fullxfull.3680111486_q8ea.jpg",
         "houndingName": "JacobPaul710"
     },
     {
@@ -16,7 +16,7 @@ const mineralSeed = [
         "date": "04-20-00",
         "conditions": "Cloudy",
         "county": "Linn",
-        "image": "https://i.imgur.com/dPZSUf9.jpeg",
+        "image": "https://i.imgur.com/UfPi4R7.jpg",
         "houndingName": "JacobPaul710"
     },
     {
