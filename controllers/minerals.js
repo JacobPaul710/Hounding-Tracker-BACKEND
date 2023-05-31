@@ -8,8 +8,10 @@ const mineralSeed = [
         "date": "09-03-22",
         "conditions": "Sunny",
         "county": "Linn",
+        "markers":[
         "geocode": "44.3914279554609, -122.98910923622539",
-        "popUp": "Carnelian found by JacobPaul710",
+        "popUp": "Carnelian found by JacobPaul710"
+        ],
         "image": "https://i.imgur.com/mQLxpEb.png",
         "houndingName": "JacobPaul710"
     },
